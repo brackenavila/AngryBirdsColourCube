@@ -9,7 +9,7 @@ $(function(){
  cu=$('#cube');
  c=$('#cube div'); $i=$('img')[0];
  $i.setAttribute('ondrag',"e=event,X=e.pageX,Y=e.pageY, X>795 && Y>205 && Y<392 ? ($plus++,$Dir=$y,$2=1,$1=$3=0): X<795 && Y>205 && Y<392 ? ($plus--,$Dir=$y,$2=1,$1=$3=0) : Y<300 && X>705 && X<892 ? ($plus++,$Dir=$x,$1=1,$2=$3=0) : Y>300 && X>705 && X<892 ? ($plus--,$Dir=$x,$1=1,$2=$3=0) : X>705 && Y<205 ? ($plus--,$Dir=$x,$3=0,$1=$2=-1) : X<705 && Y>392 ? ($plus++,$Dir=$x,$3=0,$1=$2=-1) : X<705 && Y<205 ? ($plus--,$Dir=$x,$1=-1,$2=1,$3=0) : X>892 && Y>392 ? ($plus++,$Dir=$x,$1=-1,$2=1,$3=0) : ($plus--,$Dir=$x,$1=$2=$3=0), $('#cube').css({'-webkit-transform':'rotate3D('+$1+','+$2+','+$3+','+$plus+'deg)'}),$('#loaf').text(Y), $('#brad').text($1) ");
- setTimeout(function(){c[0].style.backgroundImage='url(img/AB.jpg)';},200);
+ setTimeout(function(){c[0].style.backgroundImage='url(img/AB0.jpg)';},200);
  setTimeout(function(){cu[0].style.webkitTransform='rotateY(390deg)'; cu[0].webkitRequestFullscreen()},500);
  while($b!==11){$('<button style="background-image:-webkit-radial-gradient(top,black,'+$birds[$b-4]+',black);outline-color:'+$birds[$b]+';">'+$birds[$b++]+'</button>').appendTo('body');}
  $('button').click(function(){
